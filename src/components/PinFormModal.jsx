@@ -80,7 +80,7 @@ export default function PinFormModal({ isOpen, onClose, onSubmit }) {
             name="description"
             value={formData.description}
             onChange={handleChange}
-            placeholder="Short description (max 300 chars) *"
+            placeholder="Short description (max 300 chars). Include details like the name of the congressman or contractor involved.*"
             required
             maxLength="300"
             rows="3"
