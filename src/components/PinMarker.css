@@ -20,3 +20,17 @@
   transform: translate(-50%, -100%) scale(1.3);
   font-size: 28px;
 }
+/* src/components/PinMarker.css */
+.leaflet-popup-content {
+  padding: 12px !important;
+  max-width: 320px !important;
+}
+
+.pin-popup p {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.pin-popup a {
+  word-break: break-word;
+}
