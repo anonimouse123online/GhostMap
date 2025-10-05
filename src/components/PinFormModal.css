@@ -1,0 +1,126 @@
+/* src/components/PinFormModal.css */
+
+.pin-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(2px);
+}
+
+.pin-form-modal {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  min-width: 250px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-header h3 {
+  margin: 8px 0;
+  font-size: 1.25rem;
+}
+
+.modal-header p {
+  margin: 4px 0 12px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.pin-form-modal input,
+.pin-form-modal textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.pin-form-modal textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.source-row {
+  margin-bottom: 8px;
+}
+
+.source-row input {
+  margin-bottom: 0;
+}
+
+.source-row input + input {
+  margin-top: 4px;
+}
+
+.add-source-btn {
+  width: 100%;
+  padding: 8px;
+  background: #f0f0f0;
+  border: 1px dashed #999;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.add-source-btn:hover {
+  background: #e8e8e8;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-actions button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+.btn-primary {
+  background: #ff6b35;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #e05a2a;
+}

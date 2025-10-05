@@ -1,0 +1,22 @@
+/* src/components/PinMarker.css */
+
+.custom-marker {
+  cursor: pointer;
+}
+
+.pin-emoji {
+  font-size: 24px;
+  text-align: center;
+  transform: translate(-50%, -100%);
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  transition: transform 0.2s ease, font-size 0.2s ease;
+  display: inline-block;
+}
+
+/* Scale up on hover */
+.custom-marker:hover .pin-emoji {
+  transform: translate(-50%, -100%) scale(1.3);
+  font-size: 28px;
+}
